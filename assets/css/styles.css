@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+}
+.form {
+  background-color: white;
+  width: 450px;
+  height: 450px;
+  border-radius: 15px;
+  padding: 40px;
+}
