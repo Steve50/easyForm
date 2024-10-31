@@ -3,20 +3,87 @@
   margin: 0;
   box-sizing: border-box;
 }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 1rem 0;
+  text-align: center;
+  z-index: 1000; /* Para que esté encima de otros elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para header */
+}
+
 body {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
+footer {
+  width: 100%;
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 1rem 0;
+  text-align: center;
+  bottom: 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra para footer */
+}
+
+footer i {
+  color: #7952b3; /* Color oficial de Bootstrap */
+  margin-right: 5px;
+}
+
+footer p:last-child {
+  color: #6c757d;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer p:last-child {
+  font-size: 0.9rem;
+  background: linear-gradient(45deg, #7952b3, #6f42c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Espacio entre los elementos */
+  align-items: center;
+  gap: 1rem; /* Espaciado entre los elementos */
+}
+footer p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
 .formContainer {
   display: flex;
-  justify-content: center;
-  justify-items: center;
-  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto; /* Altura mínima */
+  transition: min-height 0.4s ease-in-out; /* Suaviza el cambio de altura */
 }
+
 .form {
   background-color: white;
   width: 450px;
-  height: 450px;
+  height: auto;
   border-radius: 15px;
   padding: 40px;
+  transition: min-height 0.4s ease-in-out;
+  margin: 115px 0 50px 0;
+}
+
+#liveAlertPlaceholder {
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  max-height: 0;
+  padding: 0;
+}
+
+#liveAlertPlaceholder.show {
+  max-height: 100px;
+  padding: 1rem;
 }

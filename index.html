@@ -10,11 +10,18 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>Formulario</title>
   </head>
   <body>
+    <header>
+      <h3>Formulario Sencillo con validación</h3>
+    </header>
     <section class="formContainer">
-      <form class="form mt-5" id="formUser">
+      <form class="form" id="formUser">
         <div id="liveAlertPlaceholder"></div>
         <div class="mb-3">
           <label for="name" class="form-label">Nombre</label>
@@ -83,6 +90,12 @@
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
     </section>
+    <footer>
+      <div class="footer-content">
+        <p>Esteban Gallegos Morales</p>
+        <p><i class="bi bi-bootstrap-fill"></i>Powered by Bootstrap</p>
+      </div>
+    </footer>
     <script src="./assets/js/app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
